@@ -369,5 +369,24 @@ class LoremIpsum
 
         return $strings;
     }
+
+    /**
+     * @return boolean
+     */
+    public function isFirst(): bool {
+        return $this->first;
+    }
+
+    /**
+     * @param boolean $first
+     *
+     * @return $this
+     */
+    public function setFirst(bool $first) {
+        $this->first = $first;
+        return $this;
+    }
+
+
 }
 
